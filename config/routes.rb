@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       post :signin, to: 'auth#signin'
       post :signup, to: 'auth#signup'
       post :signout, to: 'auth#signout'
+
+      # cars
+      resources :cars
       
     end
   end
