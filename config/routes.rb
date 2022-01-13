@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
       # cities
       resources :cities
+
+      # reservations
+      resources :reservations, only: [:create, :destroy]
       
     end
   end
