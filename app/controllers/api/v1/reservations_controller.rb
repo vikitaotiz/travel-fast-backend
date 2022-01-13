@@ -1,5 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
-    def index
+  def index
     # show reservations that belongs to a user
     if params[:user_id]
       @reservations = Reservation.where(user_id: params[:user_id])
@@ -10,7 +10,7 @@ class Api::V1::ReservationsController < ApplicationController
     end
   end
 
-    def create
+  def create
     # create new reservation
     @reservation = Reservation.new(reservations_params)
 
