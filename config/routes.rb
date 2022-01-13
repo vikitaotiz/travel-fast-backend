@@ -9,9 +9,6 @@ Rails.application.routes.draw do
       # cars
       resources :cars
       post "delete_car", to: "cars#delete_car"
-
-      # cities
-      resources :cities
       
     end
   end
