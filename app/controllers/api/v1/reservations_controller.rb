@@ -8,7 +8,7 @@ class Api::V1::ReservationsController < ApplicationController
     else
       render json: { message: 'There was an error successfully' }, status: :unauthorized
     end
-end
+  end
 
   private
 
