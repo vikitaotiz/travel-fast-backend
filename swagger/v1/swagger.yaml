@@ -194,7 +194,6 @@ paths:
           in: path
           required: true
           schema:
-
             type: integer
       responses:
         "200":
@@ -230,7 +229,6 @@ paths:
           description: city found and deleted
           content:
             application/json:
-
               schema:
                 type: object
                 properties:
@@ -300,7 +298,7 @@ paths:
           description: unsupported accept header
 
 servers:
-  - url: https://ridefast.herokuapp.com/api/v1/
+  - url: https://travel-fast-bk.herokuapp.com/api/v1/
     variables:
       defaultHost:
-        default: https://ridefast.herokuapp.com/api/v1/
+        default: https://travel-fast-bk.herokuapp.com/api/v1/
