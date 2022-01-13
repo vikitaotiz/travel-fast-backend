@@ -129,13 +129,13 @@ paths:
                   type: string
                 duration:
                   type: integer
-                number_of_seats:
+                seats:
                   type: integer
               required:
                 - name
                 - price
                 - duration
-                - number_of_seats
+                - seats
 
   "/cities":
     get:
@@ -176,13 +176,13 @@ paths:
                   type: string
                 duration:
                   type: integer
-                number_of_seats:
+                seats:
                   type: integer
               required:
                 - name
                 - price
                 - duration
-                - number_of_seats
+                - seats
 
   "/cars/{id}":
     delete:

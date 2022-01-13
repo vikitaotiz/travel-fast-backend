@@ -31,7 +31,7 @@ Car.create(
     price: 800,
     image: "https://static.fzinternal.com/common/mfg/Honda/2016-honda-civic.png",
     duration: 12,
-    number_of_seats: 10
+    seats: 10
 )
 
 Car.create(
@@ -40,7 +40,7 @@ Car.create(
     price: 800,
     image: "https://static.fzinternal.com/common/mfg/Honda/2016-honda-civic.png",
     duration: 12,
-    number_of_seats: 10
+    seats: 10
 )
 
 Car.create(
@@ -49,7 +49,7 @@ Car.create(
     price: 800,
     image: "https://static.fzinternal.com/common/mfg/Honda/2016-honda-civic.png",
     duration: 12,
-    number_of_seats: 10
+    seats: 10
 )
 
 Car.create(
@@ -58,7 +58,7 @@ Car.create(
     price: 800,
     image: "https://static.fzinternal.com/common/mfg/Honda/2016-honda-civic.png",
     duration: 12,
-    number_of_seats: 10
+    seats: 10
 )
 
 Car.create(
@@ -67,7 +67,7 @@ Car.create(
     price: 800,
     image: "https://static.fzinternal.com/common/mfg/Honda/2016-honda-civic.png",
     duration: 12,
-    number_of_seats: 10
+    seats: 10
 )
 
 Car.create(
@@ -76,7 +76,7 @@ Car.create(
     price: 800,
     image: "https://static.fzinternal.com/common/mfg/Honda/2016-honda-civic.png",
     duration: 12,
-    number_of_seats: 10
+    seats: 10
 )
 
 10.times do 
