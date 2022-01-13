@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :cities
 
       # reservations
+      get "reservations/:user_id", to: "reservations#index"
       resources :reservations, only: [:create, :destroy]
       
     end
