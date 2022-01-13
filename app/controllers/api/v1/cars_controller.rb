@@ -36,7 +36,7 @@ class Api::V1::CarsController < ApplicationController
       :description,
       :price,
       :duration,
-      :number_of_seats
+      :seats
     )
   end
 end
