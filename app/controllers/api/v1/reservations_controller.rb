@@ -36,7 +36,7 @@ class Api::V1::ReservationsController < ApplicationController
   def reservations_params
     params.require(:reservation).permit(
       :user_id,
-      :car,
+      :car_id,
       :city,
       :start_date,
       :end_date

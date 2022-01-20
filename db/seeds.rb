@@ -85,7 +85,7 @@ end
 
 Reservation.create(
     user_id: 1,
-    car: "Toyota Mark X",
+    car_id: 1,
     city: "Eldoret",
     start_date: "2021-12-5",
     end_date: "2021-12-10"
@@ -93,7 +93,7 @@ Reservation.create(
 
 Reservation.create(
     user_id: 2,
-    car: "Toyota Prado",
+    car_id: 2,
     city: "Nairobi",
     start_date: "2021-12-5",
     end_date: "2021-12-10"
@@ -101,7 +101,7 @@ Reservation.create(
 
 Reservation.create(
     user_id: 1,
-    car: "Suzuki",
+    car_id: 3,
     city: "Kampala",
     start_date: "2021-12-5",
     end_date: "2021-12-10"
