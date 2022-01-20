@@ -86,7 +86,7 @@ end
 Reservation.create(
     user_id: 1,
     car: "Toyota Mark X",
-    city_id: 1,
+    city: "Eldoret",
     start_date: "2021-12-5",
     end_date: "2021-12-10"
 )
