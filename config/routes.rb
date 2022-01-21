@@ -15,9 +15,6 @@ Rails.application.routes.draw do
       resources :cars
       post "delete_car", to: "cars#delete_car"
 
-      # cities
-      resources :cities
-
       # reservations
       get "reservations/:user_id", to: "reservations#index"
       resources :reservations, only: [:create, :destroy]

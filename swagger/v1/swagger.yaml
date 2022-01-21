@@ -137,53 +137,6 @@ paths:
                 - duration
                 - seats
 
-  "/cities":
-    get:
-      summary: Gets all cities
-      tags:
-        - Cities
-      parameters: []
-      responses:
-        "201":
-          description: gets all cities
-        "422":
-          description: invalid request
-
-    "/cities":
-    post:
-      summary: Creates new car
-      tags:
-        - Cities
-      parameters: []
-      responses:
-        "201":
-          description: creates new car
-        "422":
-          description: invalid request
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-                description:
-                  type: string
-                price:
-                  type: integer
-                image:
-                  type: string
-                duration:
-                  type: integer
-                seats:
-                  type: integer
-              required:
-                - name
-                - price
-                - duration
-                - seats
-
   "/cars/{id}":
     delete:
       summary: Deletes a specified car
@@ -213,33 +166,6 @@ paths:
         "406":
           description: unsupported accept header
 
-  "/cities/{id}":
-    delete:
-      summary: Deletes a specified city
-      tags:
-        - Cities
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: integer
-      responses:
-        "200":
-          description: city found and deleted
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  id:
-                    type: integer
-                required:
-                  - id
-        "404":
-          description: city not found
-        "406":
-          description: unsupported accept header
 
   "/reservations/{id}":
     delete:

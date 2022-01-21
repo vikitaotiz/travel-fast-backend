@@ -1,8 +1,6 @@
 class Api::V1::CarsController < ApplicationController
   def index
-    @cars = Car.all
-
-    render json: { data: @cars }, status: :created
+    render json: { data: Car.all }, status: :created
   end
 
   def create
@@ -19,7 +17,7 @@ class Api::V1::CarsController < ApplicationController
     car = Car.find(params[:car_id])
 
     if car
-      car.reservations&.each { |re| Reservation.find(re.id).delete }
+      car.reservations.each { |re| Reservation.find(re.id).delete }
       car.delete
       render json: { message: 'Car deleted' }, status: :ok
     else
