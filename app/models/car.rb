@@ -4,4 +4,6 @@ class Car < ApplicationRecord
   validates :price, presence: true
   validates :duration, presence: true
   validates :seats, presence: true
+
+  has_many :reservations
 end

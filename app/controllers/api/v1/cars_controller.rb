@@ -19,7 +19,7 @@ class Api::V1::CarsController < ApplicationController
     car = Car.find(params[:car_id])
 
     if car
-      car.reservations.delete_all
+      car.reservations.each { |re| Reservation.find(re.id).delete } if car.reservations
       car.delete
       render json: { message: 'Car deleted' }, status: :ok
     else
